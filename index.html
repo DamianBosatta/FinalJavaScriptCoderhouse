@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Estacionamiento</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header id="header" class="bg-dark text-light p-3 sticky-top shadow-lg">
+    
+          
+            <div class="d-flex justify-content-center flex-grow-1">
+                <button id="parkCarButton" class="btn btn-warning mx-2">Estacionar Coche</button>
+                <button id="leaveParkingButton" class="btn btn-danger mx-2">Liberar Espacio</button>
+                <button id="resetButton" class="btn btn-secondary mx-2">Reiniciar Estacionamiento</button>
+            </div>
+       
+    </header>
+    <main class="container my-5 d-flex flex-column align-items-center">
+       
+        <div class="position-relative text-center">
+            
+            <h1 class="parking-title position-absolute">Parking</h1>
+           
+            <img src="./assets/coderimg.jpg" alt="Título de CoderHouse" class="img-fluid mb-3 coder-image">
+        </div>
+    
+        <!-- Mapa de estacionamiento -->
+        <div id="parkingMap" class="d-flex flex-wrap justify-content-center mt-4"></div>
+    </main>
+    
+
+    <!-- Enlaza los archivos JS al final del archivo HTML -->
+    <script src="./js/map.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
